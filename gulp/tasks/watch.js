@@ -21,10 +21,20 @@ gulp.task('watch', function() {
     gulp.start('cssInject');
   });
 
+  //watch javascript and run scriptsRefresh task on change
+  watch('./app/assets/scripts/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  })
+
 });
 
 //auto inject latest css - styles is dependency - it runs the styles task
 gulp.task('cssInject',['styles'], function() {
   return gulp.src('./app/temp/styles/styles.css')
   .pipe(browserSync.stream());
+})
+
+//refresh browser on javascript change - scripts task in scripts.js is a dependency 
+gulp.task('scriptsRefresh', ['scripts'] ,function() {
+  browserSync.reload();
 })
