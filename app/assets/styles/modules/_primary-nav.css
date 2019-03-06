@@ -1,14 +1,14 @@
 .primary-nav {
-
   padding-top: 10px;
 
   @mixin atMedium {
-    padding-top: 0; 
+    padding-top: 0;
   }
 
   &--pull-right {
     @mixin atMedium {
-      float: right;}
+      float: right;
+    }
   }
 
   ul {
@@ -36,19 +36,18 @@
   }
 
   a {
-    color: white;
-    text-decoration: none;
+    color: #FFF;
     font-weight: 300;
+    text-decoration: none;
     display: block;
     padding: 5px 8px;
     font-size: .8rem;
     background-color: rgba($mainBlue, .5);
-  }
 
-  @mixin atMedium {
-    padding: 12px 0;
-    font-size: 1rem;
-    background-color: transparent;
+    @mixin atMedium {
+      font-size: 1rem;
+      padding: 12px 0;
+      background-color: transparent;
+    }
   }
-
 }

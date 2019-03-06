@@ -1267,16 +1267,13 @@ Instead edit gulp/templates/sprite */
     }
 
 .primary-nav {
-
   padding-top: 10px;
-
 }
 
 @media (min-width: 800px) {
 
 .primary-nav {
     padding-top: 0
-
 }
   }
 
@@ -1325,9 +1322,9 @@ Instead edit gulp/templates/sprite */
   }
 
 .primary-nav a {
-    color: white;
-    text-decoration: none;
+    color: #FFF;
     font-weight: 300;
+    text-decoration: none;
     display: block;
     padding: 5px 8px;
     font-size: .8rem;
@@ -1336,10 +1333,9 @@ Instead edit gulp/templates/sprite */
 
 @media (min-width: 800px) {
 
-.primary-nav {
-    padding: 12px 0;
-    font-size: 1rem;
-    background-color: transparent
-
-}
+.primary-nav a {
+      font-size: 1rem;
+      padding: 12px 0;
+      background-color: transparent
+  }
   }
